@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e973a2f-0cab-4862-ba04-a19f13787a76" name="Changes" comment="Added routes for projects and emails. Also added nodemailer service with handlebars, in order to send emails to user with dynamic variables.">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="repository" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Cg3vnNYoLVGiQY7gIZUi2zsCcQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web/2022/blog/server/package.json&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/web/2022/blog/client/node_modules/react-scripts&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\web\\2022\\blog\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;repository&quot;,
+      &quot;directory&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\2022\blog\client\src\components\FooterCategories" />
+      <recent name="D:\web\2022\blog\client\src\utils" />
+      <recent name="D:\web\2022\blog\client\public" />
+      <recent name="D:\web\2022\blog\client" />
+      <recent name="D:\web\2022\blog\server\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="App" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/client/src/__tests__/app.test.tsx" />
+      <test-names>
+        <test-name value="App" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="server:watch" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server:watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/server/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.build (1)" />
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e973a2f-0cab-4862-ba04-a19f13787a76" name="Changes" comment="" />
+      <created>1659210633972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659210633972</updated>
+      <workItem from="1659210635732" duration="2412000" />
+      <workItem from="1659214482246" duration="1253000" />
+      <workItem from="1659242986729" duration="3392000" />
+      <workItem from="1659258288261" duration="4164000" />
+      <workItem from="1659271452546" duration="14477000" />
+      <workItem from="1659297720805" duration="2930000" />
+      <workItem from="1659332267386" duration="4855000" />
+      <workItem from="1659351384348" duration="18650000" />
+      <workItem from="1659382112606" duration="3823000" />
+      <workItem from="1659420400184" duration="19986000" />
+      <workItem from="1659468471767" duration="4842000" />
+      <workItem from="1659503814306" duration="307000" />
+      <workItem from="1659506086145" duration="3801000" />
+      <workItem from="1659520295797" duration="10532000" />
+      <workItem from="1659557705109" duration="1573000" />
+      <workItem from="1659591557512" duration="27417000" />
+      <workItem from="1659695721329" duration="346000" />
+      <workItem from="1659696778623" duration="13075000" />
+      <workItem from="1659724223275" duration="932000" />
+      <workItem from="1659726906915" duration="6625000" />
+      <workItem from="1659776676432" duration="2998000" />
+      <workItem from="1659863150442" duration="8681000" />
+      <workItem from="1659896991333" duration="1991000" />
+      <workItem from="1659903898724" duration="4180000" />
+      <workItem from="1659935758824" duration="3369000" />
+      <workItem from="1659953949021" duration="13163000" />
+      <workItem from="1659980098628" duration="709000" />
+      <workItem from="1660043536503" duration="14564000" />
+      <workItem from="1660074020390" duration="3073000" />
+      <workItem from="1660126592790" duration="2983000" />
+      <workItem from="1660134466271" duration="1780000" />
+      <workItem from="1660138503249" duration="9921000" />
+      <workItem from="1660160694134" duration="5511000" />
+      <workItem from="1660203279248" duration="12059000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added frame for future articles fetching. Also added store with articles data;">
+      <created>1659300551074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659300551074</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added server with express and mongoose for mongo db. Added schema for article.">
+      <created>1659301727316</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659301727316</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added logic for fetching articles from server.">
+      <created>1659366894959</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659366894959</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added routes for categories and articles. Also added types for them.">
+      <created>1659435303027</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659435303027</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added article page and commentaries section. Also fixed some problems in other pages.">
+      <created>1659710252085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659710252085</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added some routes for articles and categories. Fixed some problems.">
+      <created>1659710321284</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659710321284</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added projects page, types for them. Added translation for some components that weren't translated. Also added subscription for updates, now user can subscribe on updates and get lists when something new appears on the site.">
+      <created>1660061792529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660061792530</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/server/src/controllers/categoriesController.js" />
+        <option value="$PROJECT_DIR$/server/src/controllers/articlesController.js" />
+        <option value="$PROJECT_DIR$/server/src/controllers/emailController.js" />
+        <option value="$PROJECT_DIR$/server/src/services/emailService.js" />
+        <option value="$PROJECT_DIR$/server/src/services/projectService.js" />
+        <option value="$PROJECT_DIR$/server/src/controllers/projectsController.js" />
+        <option value="$PROJECT_DIR$/server/src/nodemailer/nodemailer.js" />
+        <option value="$PROJECT_DIR$/server/src/helpers/notificationHelper.js" />
+        <option value="$PROJECT_DIR$/server/src/helpers/subscribtionHelper.js" />
+        <option value="$PROJECT_DIR$/server/src/services/articlesService.js" />
+        <option value="$PROJECT_DIR$/server/src/services/categoriesService.js" />
+        <option value="$PROJECT_DIR$/server/src/routes/articleRoutes.js" />
+        <option value="$PROJECT_DIR$/server/src/routes/emailRoutes.js" />
+        <option value="$PROJECT_DIR$/server/src/routes/projectsRoutes.js" />
+        <option value="$PROJECT_DIR$/server/src/routes/categoriesRoutes.js" />
+        <option value="$PROJECT_DIR$/server/src/models/Category.js" />
+        <option value="$PROJECT_DIR$/server/src/models/Article.js" />
+        <option value="$PROJECT_DIR$/server/src/models/Email.js" />
+        <option value="$PROJECT_DIR$/server/src/models/Project.js" />
+        <option value="$PROJECT_DIR$/server/src/types/ProjectTypes.js" />
+        <option value="$PROJECT_DIR$/server/src/types/CategoriesTypes.js" />
+        <option value="$PROJECT_DIR$/server/src/utils/sortString.js" />
+        <option value="$PROJECT_DIR$/server/src/types/EmailTypes.js" />
+        <option value="$PROJECT_DIR$/server/src/types/ArticlesTypes.js" />
+        <option value="$PROJECT_DIR$/server/src/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="82afd02f-ebb5-4592-8fe0-4ddcd349fde4">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added frame for future articles fetching. Also added store with articles data;" />
+    <MESSAGE value="Added server with express and mongoose for mongo db. Added schema for article." />
+    <MESSAGE value="Added routes for articles and types for them." />
+    <MESSAGE value="Added logic for fetching articles from server." />
+    <MESSAGE value="Added routes for categories and types for them." />
+    <MESSAGE value="Added routes for categories and articles. Also added types for them." />
+    <MESSAGE value="Added article page and commentaries section. Also fixed some problems in other pages." />
+    <MESSAGE value="Added some routes for articles and categories. Fixed some problems." />
+    <MESSAGE value="Added projects page, types for them. Added translation for some components that weren't translated. Also added subscription for updates, now user can subscribe on updates and get lists when something new appears on the site." />
+    <MESSAGE value="Added routes for projects and emails. Also added nodemailer service with handlebars, in order to send emails to user with dynamic variables." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added routes for projects and emails. Also added nodemailer service with handlebars, in order to send emails to user with dynamic variables." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/types/ElementWithBackgroundProp.ts</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/__tests__/footer.test.tsx</url>
+          <line>6</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/blog$Categories.info" NAME="Categories Coverage Results" MODIFIED="1659432294643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

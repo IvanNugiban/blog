@@ -1,0 +1,4 @@
+client/node_modules
+client/src/utils/contants.ts
+server/.env
+server/nodemodules
