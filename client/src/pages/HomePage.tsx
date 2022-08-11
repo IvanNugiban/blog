@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect} from 'react';
+import React, {useLayoutEffect} from 'react';
 import styled from "@emotion/styled";
 import Welcome from "../components/Welcome/Welcome";
 import Button from "../ui/Button/Button";
@@ -23,9 +23,10 @@ const HomePage = observer(() => {
     const {t} = useTranslation();
 
     useLayoutEffect(() => {
-        FetchedCategories.setCategory("All categories");
-        FetchedCategories.setLimit(5);
-        FetchedArticles.setLimit(5);
+        return () => {
+            FetchedCategories.setLimit(undefined);
+            FetchedArticles.setLimit(undefined);
+        }
     }, [])
 
     return (

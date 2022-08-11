@@ -14,8 +14,10 @@ const Articles = styled.div`
 const ArticlesPage = observer(() => {
 
     useLayoutEffect(() => {
-        FetchedCategories.setLimit(undefined);
-        FetchedArticles.setLimit(undefined)
+        return () => {
+            FetchedCategories.setLimit(5);
+            FetchedArticles.setLimit(5);
+        }
     }, [])
 
     return (
