@@ -1,4 +1,4 @@
-export const baseUrl = process.env.REACT_APP_SERVER_URL;
+export const baseUrl = "http://localhost:5000";
 export const emailRegExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 export const githubRepositoriesLink = "https://github.com/IvanNugiban?tab=repositories";
 export const githubLink = "https://github.com/IvanNugiban"

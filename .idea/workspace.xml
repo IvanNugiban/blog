@@ -22,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -63,11 +63,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programming\web\2022\blog\server" />
       <recent name="D:\web\2022\blog\client\src\components\FooterCategories" />
       <recent name="D:\web\2022\blog\client\src\utils" />
       <recent name="D:\web\2022\blog\client\public" />
       <recent name="D:\web\2022\blog\client" />
-      <recent name="D:\web\2022\blog\server\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -195,7 +195,7 @@
       <workItem from="1672154579593" duration="600000" />
       <workItem from="1672155608661" duration="15000" />
       <workItem from="1672167113432" duration="2524000" />
-      <workItem from="1672176473156" duration="3284000" />
+      <workItem from="1672176473156" duration="5043000" />
     </task>
     <task id="LOCAL-00001" summary="Added frame for future articles fetching. Also added store with articles data;">
       <created>1659300551074</created>
