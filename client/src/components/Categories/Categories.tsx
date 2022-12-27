@@ -9,7 +9,7 @@ import CategoryCard from "../../ui/CategoryCard/CategoryCard";
 import ElementWithBackgroundProp from "../../types/ElementWithBackgroundProp";
 import {observer} from "mobx-react-lite";
 import Loader from "../../ui/Loader/Loader";
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 const Wrapper = styled.section`
   display: flex;
@@ -48,11 +48,13 @@ const Categories = observer(() => {
     const {background} = useTheme();
     const {t} = useTranslation();
     const navigate = useNavigate();
+    const {pathname} = useLocation();
+
 
     useEffect(() => {
         if (CategoriesStore.isLoading) return;
-        CategoriesStore.fetchCategories();
-    }, [])
+        CategoriesStore.fetchCategories(pathname === "/articles" ? undefined : 5);
+    }, [pathname])
 
     if (CategoriesStore.isLoading) return <Loader/>
     return (

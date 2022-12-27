@@ -11,6 +11,7 @@ import NoData from "../ui/NoData/NoData";
 import Loader from "../ui/Loader/Loader";
 import Button from "../ui/Button/Button";
 import {githubRepositoriesLink} from "../utils/constants"
+import {toJS} from "mobx";
 
 const Projects = styled.div`
   padding: 140px 0 40px 0;
@@ -31,6 +32,8 @@ const ProjectsPage = observer(() => {
 
     if(FetchedArticles.isLoading) return <Loader/>
     if (FetchedArticles.error) return <NoData/>
+
+    console.log(toJS(ProjectsStore));
 
     return (
         <Projects data-testid="projects">

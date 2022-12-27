@@ -8,18 +8,18 @@ class Categories {
     chosenCategory : string = "All categories";
     error: unknown | undefined = undefined;
     isLoading = false;
-    limit : number | undefined = undefined;
 
     constructor() {
         makeAutoObservable(this);
     }
 
-    async fetchCategories() {
+    async fetchCategories(limit: number | undefined) {
+        console.log(limit);
         this.isLoading = true;
         try {
             const categories: AxiosResponse<ICategory[]> = await axios.get(`${baseUrl}/api/categories/get`, {
                 params: {
-                    limit: this.limit,
+                    limit
                 }
             });
             runInAction(() => this.categories = categories.data)
@@ -28,10 +28,6 @@ class Categories {
         } finally {
             runInAction(() => this.isLoading = false)
         }
-    }
-
-    setLimit(limit: number | undefined) {
-        this.limit = limit;
     }
 
     setCategory(category : string) {

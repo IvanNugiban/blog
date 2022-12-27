@@ -1,4 +1,4 @@
-import React, {useLayoutEffect} from 'react';
+import React, {useEffect} from 'react';
 import styled from "@emotion/styled";
 import Welcome from "../components/Welcome/Welcome";
 import Button from "../ui/Button/Button";
@@ -22,11 +22,8 @@ const ButtonWrapper = styled.div`
 const HomePage = observer(() => {
     const {t} = useTranslation();
 
-    useLayoutEffect(() => {
-        return () => {
-            FetchedCategories.setLimit(undefined);
-            FetchedArticles.setLimit(undefined);
-        }
+    useEffect(() => {
+       FetchedCategories.setCategory("All categories")
     }, [])
 
     return (

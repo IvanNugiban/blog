@@ -19,8 +19,7 @@ const StyledTitleAndLink = styled.div`
   margin-bottom: 50px;
 `
 
-
-const LinkBlock = styled.div<IBlockProps>`
+const TitleBlock = styled.div<IBlockProps>`
   display: flex;
   align-items: center;
   gap: 10px;
@@ -33,14 +32,16 @@ const LinkBlock = styled.div<IBlockProps>`
       transition: 1s;
     }
   }
+  @media screen and (max-width: 750px) {
+    gap: 2px;
+  }
 `
 
-const TitleBlock = styled(LinkBlock)`
+const LinkBlock = styled(TitleBlock)`
   @media screen and (max-width: 750px) {
     display: none;
   }
 `
-
 const TitleAndLink = ({category, linkText, onClick}: ITitleAndLinkProps) => {
     const {background} = useTheme();
     const {pathname} = useLocation();

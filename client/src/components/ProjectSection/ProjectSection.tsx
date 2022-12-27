@@ -28,12 +28,13 @@ const ProjectTitle = styled.h2`
 
 const ProjectSection = ({title, images, description, link}: IProps) => {
     const {t} = useTranslation();
+
     return (
         <StyledProjectSection>
             <ProjectTitle>{title}</ProjectTitle>
             <Carousel images={images}/>
             <Paragraph1>{description}</Paragraph1>
-            <Button><a href={link}>{t("to_the_project")}</a></Button>
+            <a href={link}><Button>{t("to_the_project")}</Button></a>
         </StyledProjectSection>
     );
 };

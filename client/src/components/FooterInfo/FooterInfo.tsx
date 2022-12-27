@@ -40,7 +40,8 @@ const FooterInfo = observer(() => {
     const {pathname} = useLocation();
 
     useEffect(() => {
-        if (pathname !== "/" || "/articles") FetchedCategories.fetchCategories();
+        if (pathname === "/" || pathname === "/articles") return;
+        FetchedCategories.fetchCategories(5);
     }, [pathname])
 
     if (FetchedCategories.isLoading) return <Loader/>

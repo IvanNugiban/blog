@@ -9,18 +9,17 @@ class Articles {
     chosenArticle: IArticle = {} as IArticle;
     error: unknown | undefined = undefined;
     isLoading = false;
-    limit: number | undefined = 5;
 
     constructor() {
         makeAutoObservable(this);
     }
 
-    async fetchArticles(language: string) {
+    async fetchArticles(language: string, limit: number | undefined) {
         this.isLoading = true;
         try {
             const articles: AxiosResponse<IArticlesResponseData[]> = await axios.get(`${baseUrl}/api/articles/get`, {
                 params: {
-                    limit: this.limit,
+                    limit,
                     language
                 }
             });
@@ -62,10 +61,6 @@ class Articles {
         } finally {
             runInAction(() => this.isLoading = false)
         }
-    }
-
-    setLimit(limit: number | undefined) {
-        this.limit = limit;
     }
 
     get filteredArticles() {
