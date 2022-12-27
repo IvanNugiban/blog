@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node src/index.js"
   },
+  "engines": {
+    "node": "18.12.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
