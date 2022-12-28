@@ -33,7 +33,6 @@ const ProjectsPage = observer(() => {
     if(FetchedArticles.isLoading) return <Loader/>
     if (FetchedArticles.error) return <NoData/>
 
-    console.log(toJS(ProjectsStore));
 
     return (
         <Projects data-testid="projects">

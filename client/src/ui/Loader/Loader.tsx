@@ -7,6 +7,7 @@ const StyledLoader = styled(CircularProgress)`
   left: 50%;
   top: 50%;
   z-index: 1000;
+  transform: translate(-50%, -50%);
 `
 
 const Wrapper = styled.div`

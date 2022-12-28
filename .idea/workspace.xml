@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/client/server.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/ProjectSection/ProjectSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProjectSection/ProjectSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/ProjectsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProjectsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ui/Loader/Loader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ui/Loader/Loader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/utils/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/constants.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,6 +199,7 @@
       <workItem from="1672176473156" duration="5312000" />
       <workItem from="1672224053707" duration="305000" />
       <workItem from="1672230710580" duration="12000" />
+      <workItem from="1672241410944" duration="1809000" />
     </task>
     <task id="LOCAL-00001" summary="Added frame for future articles fetching. Also added store with articles data;">
       <created>1659300551074</created>
