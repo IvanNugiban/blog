@@ -11,7 +11,7 @@ import helmet from "helmet";
 const app = express();
 dotenv.config();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5050;
 const dbUrl = process.env.dbUrl || ""
 
 app.use(cors({
@@ -24,6 +24,9 @@ app.use("/api/email", emailRoutes);
 app.use("/api/articles", articlesRoutes);
 app.use("/api/categories", categoriesRoutes);
 app.use("/api/projects", projectsRoutes);
+app.options('/*', (_, res) => {
+    res.sendStatus(200);
+});
 
 app.listen(PORT, async () => {
     try {

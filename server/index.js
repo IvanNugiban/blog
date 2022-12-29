@@ -23,7 +23,7 @@ const projectsRoutes_1 = __importDefault(require("./routes/projectsRoutes"));
 const helmet_1 = __importDefault(require("helmet"));
 const app = (0, express_1.default)();
 dotenv_1.default.config();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5050;
 const dbUrl = process.env.dbUrl || "";
 app.use((0, cors_1.default)({
     origin: process.env.baseUrl,
@@ -35,6 +35,9 @@ app.use("/api/email", emailRoutes_1.default);
 app.use("/api/articles", articleRoutes_1.default);
 app.use("/api/categories", categoriesRoutes_1.default);
 app.use("/api/projects", projectsRoutes_1.default);
+app.options('/*', (_, res) => {
+    res.sendStatus(200);
+});
 app.listen(PORT, () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield mongoose_1.default.connect(dbUrl);
