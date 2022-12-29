@@ -24,8 +24,10 @@ const app = (0, express_1.default)();
 dotenv_1.default.config();
 const PORT = process.env.PORT || 8080;
 const dbUrl = process.env.dbUrl || "";
-app.use((0, cors_1.default)());
 app.use(express_1.default.json());
+app.use((0, cors_1.default)({
+    origin: process.env.baseUrl
+}));
 app.use("/api/email", emailRoutes_1.default);
 app.use("/api/articles", articleRoutes_1.default);
 app.use("/api/categories", categoriesRoutes_1.default);
