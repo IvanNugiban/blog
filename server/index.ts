@@ -12,10 +12,10 @@ const app = express();
 dotenv.config();
 
 const PORT = process.env.PORT || 5050;
-const dbUrl = process.env.dbUrl || ""
+const dbUrl = process.env.DB_URL || ""
 
 app.use(cors({
-    origin: process.env.baseUrl,
+    origin: process.env.BASE_URL,
     credentials: true
 }));
 app.use(express.json());
