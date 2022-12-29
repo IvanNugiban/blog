@@ -52,7 +52,7 @@
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\programming\\web\\2022\\blog\\server\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\programming\\web\\2022\\blog\\client\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -199,7 +199,10 @@
       <workItem from="1672176473156" duration="5312000" />
       <workItem from="1672224053707" duration="305000" />
       <workItem from="1672230710580" duration="12000" />
-      <workItem from="1672241410944" duration="1809000" />
+      <workItem from="1672241410944" duration="2556000" />
+      <workItem from="1672307207509" duration="588000" />
+      <workItem from="1672311802867" duration="924000" />
+      <workItem from="1672314023580" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="Added frame for future articles fetching. Also added store with articles data;">
       <created>1659300551074</created>
