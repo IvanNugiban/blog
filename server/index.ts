@@ -6,6 +6,7 @@ import articlesRoutes from "./routes/articleRoutes"
 import categoriesRoutes from "./routes/categoriesRoutes";
 import emailRoutes from "./routes/emailRoutes";
 import projectsRoutes from "./routes/projectsRoutes";
+import helmet from "helmet";
 
 const app = express();
 dotenv.config();
@@ -13,15 +14,16 @@ dotenv.config();
 const PORT = process.env.PORT || 8080;
 const dbUrl = process.env.dbUrl || ""
 
-app.use(express.json());
 app.use(cors({
     origin: process.env.baseUrl,
     credentials: true
 }));
+app.use(express.json());
+app.use(helmet())
 app.use("/api/email", emailRoutes);
 app.use("/api/articles", articlesRoutes);
 app.use("/api/categories", categoriesRoutes);
-app.use("/api/projects", projectsRoutes)
+app.use("/api/projects", projectsRoutes);
 
 app.listen(PORT, async () => {
     try {
