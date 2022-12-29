@@ -28,12 +28,11 @@ app.options('/*', (_, res) => {
     res.sendStatus(200);
 });
 
-app.listen(PORT, async () => {
-    try {
-        await mongoose.connect(dbUrl);
-        console.log(`Server started on port ${PORT}`)
-    } catch (e) {
-        console.log(e);
-    }
-})
 
+const start = async () => {
+    await mongoose.connect(dbUrl);
+
+    app.listen(PORT);
+};
+
+start();

@@ -38,12 +38,8 @@ app.use("/api/projects", projectsRoutes_1.default);
 app.options('/*', (_, res) => {
     res.sendStatus(200);
 });
-app.listen(PORT, () => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        yield mongoose_1.default.connect(dbUrl);
-        console.log(`Server started on port ${PORT}`);
-    }
-    catch (e) {
-        console.log(e);
-    }
-}));
+const start = () => __awaiter(void 0, void 0, void 0, function* () {
+    yield mongoose_1.default.connect(dbUrl);
+    app.listen(PORT);
+});
+start();
