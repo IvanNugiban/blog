@@ -30,7 +30,8 @@ app.options('/*', (_, res) => {
 
 app.listen(PORT, async () => {
     try {
-        await mongoose.connect(dbUrl)
+        await mongoose.connect(dbUrl);
+        console.log(`Server started on port ${PORT}`)
     } catch (e) {
         console.log(e);
     }
