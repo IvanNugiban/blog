@@ -14,7 +14,10 @@ const PORT = process.env.PORT || 8080;
 const dbUrl = process.env.dbUrl || ""
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: process.env.baseUrl,
+    credentials: true
+}));
 app.use("/api/email", emailRoutes);
 app.use("/api/articles", articlesRoutes);
 app.use("/api/categories", categoriesRoutes);
